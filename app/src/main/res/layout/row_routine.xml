@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/routine_cv"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#fff"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:background="@drawable/grad5">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:stretchColumns="4"
+        android:visibility="visible"
+        >
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Day"
+                android:textSize="20dp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/day_tv"
+                android:layout_width="87dp"
+                android:layout_height="match_parent"
+                android:text="Sunday"
+                android:textSize="20dp"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="73dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:textSize="20dp"
+                android:text="Time"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:text="11.3-1.00"
+                android:textSize="20dp"
+                android:textColor="#000" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Course  "
+                android:textSize="20dp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/course_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:textSize="20dp"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:textSize="20dp"
+                android:text="Teacher  "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/teacher_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abcd"
+                android:textSize="20dp"
+                android:textColor="#000" />
+        </TableRow>
+    </TableLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
